@@ -6,6 +6,23 @@ Rails.application.routes.draw do
   get 'favs/:id'=>'favs#show'
 
   get '/favs'=>'favs#index'
+  get 'favs/page'=>'favs#page'
+
+
+get 'favs/terms'=>'favs#terms'
+get 'favs/about'=>'favs#about'
+get 'favs/careers'=>'favs#careers'
+get 'favs/blog'=>'favs#blog'
+get 'favs/services'=>'favs#services'
+get 'favs/contact'=>'favs#contact'
+
+#service routes#
+get 'favs/service1'=>'favs#service1'
+get 'favs/service2'=>'favs#service2'
+get 'favs/service3'=>'favs#service3'
+get 'favs/service4'=>'favs#service4'
+get 'favs/service5'=>'favs#service5'
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
